@@ -6,6 +6,16 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'haml'
+
+group :test do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "cucumber"
+  gem "cucumber-rails", :require => false
+  gem "database_cleaner"
+  gem "capybara"
+end
 
 
 # Gems used only for assets and not required

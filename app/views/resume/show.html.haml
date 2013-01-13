@@ -1,0 +1,87 @@
+= stylesheet_link_tag 'resume'
+
+.section
+  .bubble
+    .toggle_title#main Kelly Wolf Stannard
+    .togglable
+      %p= mail_to "kelly@stannard.org", "kelly@stannard.org"
+      %p 317.670.9869
+      %p= link_to "github.com/kwstannard", "http://www.github.com/kwstannard"
+
+.section
+  .bubble
+    .toggle_title#projects Experience and Projects
+    .togglable
+      .toggle_title.small Ruby on Rails contributor
+      .togglable
+        - link = "https://github.com/rails/rails/commit/9381afa71b4806aa0d168c8fe21455d4ed13cc6c"
+        %p= link_to "String#to_date fix", link
+      .toggle_title.small Data Importer
+      .togglable
+        %p
+          Why - We need to create or alter large batches of records in our
+          database.
+        %p
+          What - An interface on our app where you can upload a CSV file and
+          it will convert that information and send it to Active Record.
+        %p
+          How - Completely test driven with RSpec and Capybara. Separated
+          concerns and large amounts of dynamicism for ease of refactoring
+          and future functionality.
+      .toggle_title.small Call Center Interface
+      .togglable
+        %p
+          Why - Our customers wanted more visibility into who was using our
+          call center and what they were calling about.
+        %p
+          What - Condensed our multiple forms into a single form and then
+          added in the requested functionality.
+        %p
+          How - Worked with our call center team to ensure the new interface
+          was what they were looking for.
+      .toggle_title.small AT&T Plan Optimization
+      .togglable
+        %p
+          Why - We are looking to automate the tasks our billing department
+          performs.
+        %p
+          What - A script that takes a list of phone lines and their minutes
+          used and outputs the cheapest possible configuration of plans offered
+          by AT&T.
+        %p
+          How - Several spikes were done with different algorithms to find the
+          best one, followed by a test driven feature. Finished product works
+          in O(n*log(n)) time.
+
+.section
+  .bubble
+    .toggle_title#work Professional History
+    .togglable
+      .toggle_title.small Mobi Wireless Management
+      .togglable
+        %p Position: Ruby on Rails developer
+        %p= link_to "Website", "http://mobiwm.com/"
+        %p October 2011 - present
+      .toggle_title.small SquareJive
+      .togglable
+        %p Position: Ruby on Rails contractor
+        %p= link_to "Website", "http://squarejive.com/"
+        %p December 2011 - July 2012
+
+.section
+  .bubble
+    .toggle_title#education Education
+    .togglable
+      %p Indiana University: Bachelor of Arts in Physics, minor in Computer Science
+
+.section
+  .bubble
+    .toggle_title#technologies Technologies
+    .togglable
+      %p Ruby/Rails: 1 year of professional experience
+      %p Javascript/JQuery: 1 year of professional experience
+      %p Postgresql: 1 year of professional experience
+      %p Git/Github: 1 year of professional experience
+      %p Java: 1 year of non-professional experience
+      %p C++: 6 months of non-professional experience
+      %p Heroku, RSpec, Capybara, Factory Girl, Sinatra, Pivotal Tracker, Zendesk, Bootstrap, MySQL, MongoDB
