@@ -2,8 +2,9 @@ Kwstannard::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  root :to => 'resume#show'
+  root :to => 'resume#simple'
   match '/resume' => 'resume#show'
+  match '/resume/simple' => 'resume#simple'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
